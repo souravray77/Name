@@ -1,0 +1,71 @@
+#head{
+    background-color: #336F45;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 0%;
+    
+    
+}
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+#h1{
+    color: white;
+    margin: 0px;
+    
+}
+#photo{
+    width: 500px;
+    height: 400px;
+    background-color: whitesmoke;
+    float: left;
+}
+#lo{
+    width: 40%;
+    height: 550px;
+    float: right;
+    background-color:#FDD501;
+}
+#body1{
+    background-color: #FDD501;
+    height: 550px;
+}
+.inp{
+    margin: 40px;
+}
+#end{
+    width: 100%;
+    height: 125px;
+    background-color: white;
+    margin: 0px;
+}
+#create{
+    margin: 40px;
+}
+#bb{
+    background-color: #336F45;
+}
+#foter{
+    height: 160px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+#ii{
+    float: left;
+    width: 50%;
+}
+.birth{
+    margin: 0px;
+    color: grey;
+}
+#cc{
+    float: right;
+    width: 50%;
+}
+.cc2{
+    margin: 5px;
+    color: grey;
+}

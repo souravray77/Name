@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wellcome to Name</title>
+    <link  href="{% static 'Login.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="head"><h1 id="h1">Name</h1></div>
+    <div id="body1">
+        <div id="photo">
+            <img src="{% static 'login2.jpg' %}" width="700px" height="400px">
+        </div>
+        <div id="lo"><form action="logi" method="POST" name="login">
+            {% csrf_token %}
+            <div class="inp">
+                <b>username</b><input type="text" name="UN">
+            </div>
+            <div class="inp">
+                <b>password</b><input type="password" name="p">
+            </div>
+            {% for mess in messages %}
+            <p><font color="red" size="3">{{ mess }}</font></p>
+            {% endfor %}
+            <div class="inp"><input type="submit" id="bb"></div>
+            <div id="create"><p>New on name?</p>
+                <a href="reg">create your account</a>
+            </div></form>
+        </div>
+    </div>
+    <div id="foter"><div id="ii">
+        <div><a href="reg">Create account   |</a> 
+        <a href="#">|    About us</a>
+        </div>
+        <div>
+            <p class="birth">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.<br> You may receive SMS notifications from us and can opt out at any time.</p>
+        </div>
+        </div>
+        
+        <div id="cc">
+            <h4 class="cc2">NAME helps you connect and share with the people in your life.</h4>
+            <h5 class="cc2">Stay connected with us.</h5>
+            <h6 class="cc2">Name 2020</h6>
+        </div>
+        </div>
+    
+    
+</body>
+</html>

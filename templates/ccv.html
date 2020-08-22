@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ccv" method="POST" name="ccv">
+        {% csrf_token %}
+        <input type="text" placeholder="Full Name" name="full_name">
+        <input type="text" placeholder="Father Name" name="fn">
+        <input type="text" placeholder="Mother Name" name="mn">
+        <input type="text" placeholder="Nationality" name="na">
+        <input type="text" placeholder="Religion" name="re">
+        <input type="date" placeholder="dath of birth" name="db">
+        <input type="submit">
+
+    </form>
+</body>
+</html>

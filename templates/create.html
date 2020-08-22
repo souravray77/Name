@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create your account</title>
+    <link  href="{% static 'create.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="h">
+    <h1 id="headname">Create your account on NAME</h1>
+
+    </div>
+    
+    
+    
+    <div id="con">
+    <div id="photo">
+<img src="{% static 'create.jpg' %}" height="500px" width="100%">
+    </div>
+    <form action="reg" name="regerster" method="POST">
+        {% csrf_token  %}
+    <div id="fro">
+        <h2 class="from" id="fm">Fill up the from</h2>
+        <h3 id="fm2">It's quick and easy.</h3>
+        <div class="from">
+            <input type="text" placeholder="First Name" name="n1">
+            
+        </div>
+        <div class="from">
+            <input type="text" placeholder="Last Name" name="n2">
+        </div>
+        <div class="from">
+            <input type="text" placeholder="email" name="em">
+        </div>
+        <div class="from">
+            <input type="password" placeholder="New password" name="p1">
+        </div>
+        <div class="from">
+            <input type="password" placeholder="Retype password" name="p2">
+        </div>
+        <div class="from">
+            <input type="text" placeholder="username" name="un">
+        </div>
+    
+        <div class="from" >
+            <input type="submit" id="bb">
+        </div></form>
+     <div class="from">
+            <p><font color="grey">Tap Submit for create account</font></p>
+        </div>
+        <div class="from"> {% for mess in messages %}
+            <p><font color="red" size="3">{{ mess }}</font></p>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+<div id="foter"><div id="ii">
+<div><a href="\">Home   |</a> 
+<a href="#">|    About us</a>
+</div>
+<div>
+    <p class="birth">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.<br> You may receive SMS notifications from us and can opt out at any time.</p>
+</div>
+</div>
+
+<div id="cc">
+    <h4 class="cc2">NAME helps you connect and share with the people in your life.</h4>
+    <h5 class="cc2">Stay connected with us.</h5>
+    <h6 class="cc2">Name 2020</h6>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+    margin: 0px;
+
+}
+#navbar{
+    margin: 0px;
+    height: 150px;
+    background-color: brown;
+    width: 100%;
+}
+#name{
+    color: white;
+    margin: 0px;
+}
+#logo{
+    width: 50%;
+    height: 150px;
+    margin: 0px;
+    
+    float: left;
+}
+#info{
+    width: 50%;
+    height: 150px;
+    margin: 0px;
+    
+    float: right;
+    text-align: center;
+}
+#jobs{
+    height: 128px;
+    background-color: yellow;
+    width: 100%;
+}

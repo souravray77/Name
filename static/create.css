@@ -1,0 +1,83 @@
+body{
+    background-color: #D0D4D7;
+    margin: 0px;
+}
+#photo{
+    height: 500px;
+    background-color: #D0D4D7;
+    width: 50%;
+    margin: 0%;
+    float: left;
+
+}
+#con{
+    height: 500px;
+    width: 100%;
+}
+#fro{
+    float: right;
+    height: 500px;
+    width: 50%;
+    margin: 0%;
+    background-color: #D0D4D7;
+}
+#h{
+    height: 80px;
+    width: 100%;
+    background-color: #3B5998;
+}
+#headname{
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+.from{
+    text-align: center;
+    margin: 30px;
+}
+.birth{
+    margin: 0px;
+    color: grey;
+}
+#fm{
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#fm2{
+    color: #333333;
+    text-align: center;
+    margin: 0px;
+}
+#sel{
+    width: 160px;
+}
+#bir{
+    width: 160px;
+}
+#bb{
+    width: 160px;
+    background-color: #669F51;
+    color: white;
+    
+}
+#foter{
+    height: 160px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 80px;
+}
+#ii{
+    float: left;
+    width: 50%;
+}
+#cc{
+    float: right;
+    width: 50%;
+}
+.cc2{
+    margin: 5px;
+    color: grey;
+}

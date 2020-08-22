@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'h.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <h1 id="name">Wellcome to NAME</h1>
+            {% if user.is_authenticated %}
+            <h3> <a href="logout">logout</a></h3>
+            <h3><a href="cv">Your cv</a></h3>
+            {% else %}
+            <h2> <a href="logi">login</a></h2>
+            <h2><a href="reg">regester</a></h2>
+            {%endif%}
+        </div>
+        <div id="info">
+            {% if user.is_authenticated %}
+            <h3>Hello, {{ user.first_name }}</h3>
+           
+            {% else %}
+           <h3>please login or regester</h3>
+            {% endif %}
+        </div>
+    </div>
+    <div>
+    {% if user.is_authenticated %}
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="addon-wrapping">@</span>
+        </div><form action="mass" method="POST" name="roy">
+            {% csrf_token %}
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="user_name">
+      </form></div>
+    {% else %}
+
+    {% endif %}
+</div>
+</body>
+</html>
